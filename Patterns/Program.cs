@@ -26,7 +26,7 @@ namespace Patterns
         static void Convert(out int number)
         {
             bool isEntering = true;
-            int tempNumber = 0;// ДОБАВИЛ ТУТ
+            number = 0;
 
             while (isEntering)
             {
@@ -37,14 +37,12 @@ namespace Patterns
                 {
                     Console.WriteLine("Переконвертация прошла успешно.");
                     isEntering = false;
-                    tempNumber = number; // ДОБАВИЛ ТУТ
                 }
                 else
                 {
                     Console.WriteLine("Вы ввели некорректное число. Попробуйте снова.");
                 }
             }
-            number = tempNumber;// ДОБАВИЛ ТУТ
         }
     }
 }
